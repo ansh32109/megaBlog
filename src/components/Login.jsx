@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center w-full">
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
-            <div className="mb-2 flex justify-center">
+            <div className="mb-2 justify-center">
                 <span className="inline-block w-full max-w-[100px]">
                     <Logo />
                 </span>
@@ -48,7 +48,7 @@ const Login = () => {
                         Sign Up
                     </Link>
             </p>
-            {error && <p className="text-red-600 mt-8 text-center">
+            {/* {error && <p className="text-red-600 mt-8 text-center"> */}
                 <form onSubmit={handleSubmit(login)}>
                     <div className="space-y-5">
                         <Input 
@@ -79,7 +79,7 @@ const Login = () => {
                         </Button> 
                     </div>    
                 </form>    
-            </p>}
+            {/* </p> */}
         </div>
     </div>
   )
